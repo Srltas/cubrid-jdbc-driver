@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.github.srltas</groupId>
+  <artifactId>cubrid-jdbc-driver</artifactId>
+  <version>11.3.1.0051</version>
+  <name>CUBRID JDBC Driver</name>
+  <description>JDBC driver for connecting to CUBRID databases. This artifact packages the personal cubrid-jdbc code for Maven Central distribution.</description>
+  <url>https://github.com/Srltas/cubrid-jdbc-driver</url>
+  <licenses>
+    <license>
+      <name>The BSD 3-Clause License</name>
+      <url>https://opensource.org/licenses/BSD-3-Clause</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>Srltas</id>
+      <name>Kim Dong Min</name>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/Srltas/cubrid-jdbc-driver.git</connection>
+    <developerConnection>scm:git:ssh://github.com/Srltas/cubrid-jdbc-driver.git</developerConnection>
+    <url>https://github.com/Srltas/cubrid-jdbc-driver</url>
+  </scm>
+  <build>
+    <sourceDirectory>src/jdbc</sourceDirectory>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>3.2.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <phase>package</phase>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.3.1</version>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <phase>package</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>1.6</version>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+        <version>0.7.0</version>
+        <extensions>true</extensions>
+        <configuration>
+          <publishingServerId>central</publishingServerId>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
