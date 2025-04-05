@@ -1,7 +1,7 @@
 
 # CUBRID JDBC Driver
 
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.srltas/cubrid-jdbc-driver?label=Maven%20Central)](rhttps://central.sonatype.com/artifact/io.github.srltas/cubrid-jdbc-driver)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.srltas/cubrid-jdbc-driver?label=Maven%20Central)](https://central.sonatype.com/artifact/io.github.srltas/cubrid-jdbc-driver)
 [![Javadoc](https://javadoc.io/badge2/io.github.srltas/cubrid-jdbc-driver/javadoc.svg)](https://javadoc.io/doc/io.github.srltas/cubrid-jdbc-driver/latest/index.html)
 
 > JDBC driver for connecting to [CUBRID](https://github.com/CUBRID/cubrid) databases.
