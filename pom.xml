@@ -5,11 +5,11 @@
   <artifactId>cubrid-jdbc-driver</artifactId>
   <version>11.3.1.0051</version>
   <name>CUBRID JDBC Driver</name>
-  <description>JDBC driver for connecting to CUBRID databases. This artifact packages the personal cubrid-jdbc code for Maven Central distribution.</description>
+  <description>JDBC driver for connecting to CUBRID databases. This project packages the official driver and publishes it to Maven Central for easy integration.</description>
   <url>https://github.com/Srltas/cubrid-jdbc-driver</url>
   <licenses>
     <license>
-      <name>The BSD 3-Clause License</name>
+      <name>BSD 3-Clause License</name>
       <url>https://opensource.org/licenses/BSD-3-Clause</url>
       <distribution>repo</distribution>
     </license>
@@ -18,13 +18,18 @@
     <developer>
       <id>Srltas</id>
       <name>Kim Dong Min</name>
+      <url>https://github.com/Srltas</url>
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:git://github.com/Srltas/cubrid-jdbc-driver.git</connection>
-    <developerConnection>scm:git:ssh://github.com/Srltas/cubrid-jdbc-driver.git</developerConnection>
-    <url>https://github.com/Srltas/cubrid-jdbc-driver</url>
+    <connection>scm:git:git://github.com/CUBRID/cubrid-jdbc.git</connection>
+    <developerConnection>scm:git:ssh://github.com/CUBRID/cubrid-jdbc.git</developerConnection>
+    <url>https://github.com/CUBRID/cubrid-jdbc</url>
   </scm>
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>https://github.com/Srltas/cubrid-jdbc-driver/issues</url>
+  </issueManagement>
   <build>
     <sourceDirectory>src/jdbc</sourceDirectory>
     <plugins>
